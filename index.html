@@ -8,22 +8,22 @@
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <div id="a"></div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Dev Javier Lopez</a>
+            <a class="navbar-brand" href="#">Web Site</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link" href="portafolio.html">Proyectos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
@@ -37,20 +37,23 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row" style="margin-top: 20px;">
 
-            <div class="col-sm-5">
+           
 
-                <h1 class="text-success font-weight-bold">Bienvenidos a mi Website</h1>
-                <div id="a"></div>
-                <div id="content" class="text">
+            <div class="col-sm-12 pb-5" style="background-image: url(assets/img/work-731198_1920.jpg);  background-size: cover;">
+
+                <h1 class="text-warning font-weight-bold">Bienvenidos a mi Website</h1>
+           
+                <div id="content" class="text-white">
 
 
 
 
-                    <p class="font-weight-lighter text-justify">Mi Nombre Es Javier Alexander Lopez Lopez, Soy Programador Web desde el año 2017. Empece a encantarme por el mundo de la programacion cuando culmine mi carrera Como ANALISTA DE SISTEMAS en el Servicion Nacional de Aprendizaje Sena
-                        En Colombia el cual me permitio empapare un poco de esta tecnologia, vivo en  San Juan de Pasto- Colombia me considero  una persona   autodidacta, me  gusta aprender nuevas tecnologias
+                    <p class="font-weight-lighter text-justify pb-4" style="font-size: 18px; font-family: Open Sans,sans-serif;"><strong>
+                        Mi Nombre Es Javier Alexander Lopez Lopez, Soy Programador Web desde el año 2017. Empece a encantarme por el mundo de la programacion cuando culmine mi carrera Como ANALISTA DE SISTEMAS en el Servicion Nacional de Aprendizaje Sena
+                        En Colombia el cual me permitio empapare un poco de esta tecnologia, vivo en  San Juan de Pasto- Colombia me considero  una persona   autodidacta, me  gusta aprender nuevas tecnologias</strong>
                     </p>
 
 
@@ -60,115 +63,95 @@
                 </div>
 
             </div>
+            
 
         </div>
 
         <div class="row">
-            <h4>Habilidades</h4>
-            <br>
-
-              <br>  <br>
-            <h5>Programacion</h5>
+           
+           
+         
             <div class=" col-sm-5 1rem" style="padding: 20px;">
 
 
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CodeIgniter 90%</div>
-            </div>
-            <br>
-              <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Html y css 90%</div>
-            </div>
-<br>
+                <div id="app">
+                    <div class="text-primary"><strong>{{message }}</strong></div>
 
-              <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript 70%</div>
-          </div>
+                   
+                    <ol>
+                        <p class="text-secondary">Backend</p>
+                        <li v-for="list in backend" style="float: left; padding-right: 20px;" class="badge badge-primary">
+                          {{ list.text }}
+                        </li>
+                      </ol>
+                      <ol>
 <br>
-                <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">jquery 60%</div>
-            </div>
-            <br>
-                <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Angular en progreso%</div>
-            </div>
-            
-            
-            </div>
-            
+                        <p class="text-secondary">Frontend</p>
+                        <li v-for="list in frontend" style="float: left; padding-right: 20px; " class="badge badge-info ">
+                          {{ list.text }}
+                        </li>
+                      </ol>
+                </div>
+                <br>
+                <h5 class="mt-4">Manejo de Paquete de Oficce</h5>
 
-                <p class="font-weight-lighter text-justify">En mis inicios  trabaje con PHP como lenguaje  de desarrollo, fui agregandole algunas  herramientas como Jquery  que  es el padre   de los  frameworsk javascript    desde mi punto de  vista  poco a poco  se han ido  creando  nuevas herramientas  como  Angular, React y Vue js  que son  los mas  destacados  framerworks  del Frontend y me e interersado  bastante  con estas  herramientas.
+                <ul  class='mt-4'style="float: left;">
+                    <li>Word</li>
+                    <li>Excel</li>
+                    <li>PowerPoint</li>
+                    <li>Forms</li>
+                     <li>Teams</li>
+                    <li>One Drive</li>
+                    <li>SharePoint</li>
+                </ul>
+
+                  
+              
+            
+            
+            </div>
+            <div class="col-sm-6 mt-4 ">
+                <h4>Habilidades de Programacion backend y frontend!</h4>
+
+                <p class="font-weight-lighter ">En mis inicios  trabaje con PHP como lenguaje  de desarrollo, fui agregandole algunas  herramientas como Jquery  que  es el padre   de los  frameworsk javascript    desde mi punto de  vista  poco a poco  se han ido  creando  nuevas herramientas  como  Angular, React y Vue js  que son  los mas  destacados  framerworks  del Frontend y me e interersado  bastante  con estas  herramientas.
 
                     Para el backend e trabajado con Codeigniter, Laravel  frameworks de Lenguage PHP y NestJs que es un  framework  de node el  cual esta  inspirado por el trabajo de Angular.
 
                     Por otro lado y muy importante   e Trabajado con bases de datos relacionales MYSQL -ORACLE 
-
-
-                     <h5>Manejo de Paquete de Oficce</h5>
-
-                     <ul>
-                         <li>Word</li>
-                         <li>Excel</li>
-                         <li>PowerPoint</li>
-                         <li>Forms</li>
-                          <li>Teams</li>
-                         <li>One Drive</li>
-                         <li>SharePoint</li>
-                     </ul>
+     
             </div>
+        </div>
 
         </div>
 
         <div class="row">
 
 
-            <h4>Portafolio</h4>
+            
 
 
             <div class="col-sm-12">
+              
 
 
 
-                <div class="col-sm-6">
-                    <div class="card">
-
-
-                        <div class="card-header">
-                            <h4>Creacionescrea</h4>
-
-                        </div>
-
-                        <div class="body  font-weight-lighter text-justify">
-
-                           <strong>CreacionesCrea </strong> Fue  el segundo proyecto que realize, el cual me sirvio para dar un paso como desarrollador  freelance, 
-                            fue un proyecto elaborado con la herramienta Codeigniter el cual es un framework php orientado al paradigma MVC que le brindó a la empresa Creaciones Goretti una herramienta para administrar pedidos y tener  un control de los usuarios  que laboran  en ella , actualmente  me encuentro desarrollando una  nueva versión  con LARAVEL 7 el cual aun no ha sido desplegado pero  que será  de mucha  Ayuda para la compañía. <a href="https://creacionescrea.com.co/">visitar</a>
-
-
-
-
-                    </div>
-
-                </div>
-
-            </div>
-           <div class="col-sm-6">
-            lorem
-
-               
-           </div>
+             
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">Default</a>
+              </nav>
 
 
 
 
         </div>
 
-
-
+ 
 
 
 
     </div>
-
+<!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -176,6 +159,10 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
+
+    <script>
+        
+    </script>
 </body>
 
 </html>
