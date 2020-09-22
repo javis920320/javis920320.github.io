@@ -1,168 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<body>
+    <style>
 
-<body >
-    <div id="a"></div>
+          body{
+              background-image: url('assets/img/banner.jpg');
+              background-size: cover;
+          }
+
+    </style>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Web Site</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portafolio.html">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">Web Site</span>
         </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row" style="margin-top: 20px;">
-
-           
-
-            <div class="col-sm-12 pb-5" style="background-image: url(assets/img/work-731198_1920.jpg);  background-size: cover;">
-
-                <h1 class="text-warning font-weight-bold">Bienvenidos a mi Website</h1>
-           
-                <div id="content" class="text-white">
-
-
-
-
-                    <p class="font-weight-lighter text-justify pb-4" style="font-size: 18px; font-family: Open Sans,sans-serif;"><strong>
-                        Mi Nombre Es Javier Alexander Lopez Lopez, Soy Programador Web desde el año 2017. Empece a encantarme por el mundo de la programacion cuando culmine mi carrera Como ANALISTA DE SISTEMAS en el Servicion Nacional de Aprendizaje Sena
-                        En Colombia el cual me permitio empapare un poco de esta tecnologia, vivo en  San Juan de Pasto- Colombia me considero  una persona   autodidacta, me  gusta aprender nuevas tecnologias</strong>
-                    </p>
-
-
-
-
-
-                </div>
-
-            </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="info.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              Perfil
+            </a>
+            <a href="portafolio.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              Proyectos
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+              Blog
+            </a>
+          </div>
+          <div>
             
-
+          </div>
         </div>
+      </nav>
 
-        <div class="row">
-           
-           
-         
-            <div class=" col-sm-5 1rem" style="padding: 20px;">
+      
 
 
-                <div id="app">
-                    <div class="text-primary"><strong>{{message }}</strong></div>
-
-                   
-                    <ol>
-                        <p class="text-secondary">Backend</p>
-                        <li v-for="list in backend" style="float: left; padding-right: 20px;" class="badge badge-primary">
-                          {{ list.text }}
-                        </li>
-                      </ol>
-                      <ol>
-<br>
-                        <p class="text-secondary">Frontend</p>
-                        <li v-for="list in frontend" style="float: left; padding-right: 20px; " class="badge badge-info ">
-                          {{ list.text }}
-                        </li>
-                      </ol>
-                </div>
-                <br>
-                <h5 class="mt-4">Manejo de Paquete de Oficce</h5>
-
-                <ul  class='mt-4'style="float: left;">
-                    <li>Word</li>
-                    <li>Excel</li>
-                    <li>PowerPoint</li>
-                    <li>Forms</li>
-                     <li>Teams</li>
-                    <li>One Drive</li>
-                    <li>SharePoint</li>
-                </ul>
-
-                  
-              
-            
-            
-            </div>
-            <div class="col-sm-6 mt-4 ">
-                <h4>Habilidades de Programacion backend y frontend!</h4>
-
-                <p class="font-weight-lighter ">En mis inicios  trabaje con PHP como lenguaje  de desarrollo, fui agregandole algunas  herramientas como Jquery  que  es el padre   de los  frameworsk javascript    desde mi punto de  vista  poco a poco  se han ido  creando  nuevas herramientas  como  Angular, React y Vue js  que son  los mas  destacados  framerworks  del Frontend y me e interersado  bastante  con estas  herramientas.
-
-                    Para el backend e trabajado con Codeigniter, Laravel  frameworks de Lenguage PHP y NestJs que es un  framework  de node el  cual esta  inspirado por el trabajo de Angular.
-
-                    Por otro lado y muy importante   e Trabajado con bases de datos relacionales MYSQL -ORACLE 
-     
-            </div>
+   
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+       
+        <div class="px-8 py-4">
+          <div class="font-bold text-3xl mb-2 text-white">Creamos Tu Pagina Web</div>
+          <p class=" text-3xl text-blue-300 text-base font-bold">
+            Creamos tu propia pagina web , Con los mejores Diseños para tu negocio.
+          </p>
+          <p class="text-white">Diseño  y desarrollo web  construyen marcas.</p>
         </div>
-
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Paginas Web Pasto</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#WordPress</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Laravel</span>
         </div>
+      </div>
 
-        <div class="row">
+<div class="grid-cols-12  my-3">
+    <a class=" content-center bg-blue-500 text-white  border-blue-600 font-bold py-2 px-4 rounded" href="https://api.whatsapp.com/send?phone=+573128196355&lang=es">Puedo Ayudarte en algo?</a>
 
-
-            
-
-
-            <div class="col-sm-12">
-              
-
-
-
-             
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">Default</a>
-              </nav>
+</div>
 
 
 
 
-        </div>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
- 
-
-
-
-    </div>
-<!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="js/functions.js"></script>
-
-    <script>
-        
-    </script>
+    
 </body>
-
 </html>
